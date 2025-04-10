@@ -3,31 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Slider- Jornal Independente</title>
+    <title>Slider - Jornal Independente</title>
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Seu CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <section class="tyner-slider">
-    <div class="container">
-      <div class="img">
-        <img src="/imagens/beach.jpg" alt="">
-      </div>
-      <div class="img">
-        <img src="/imagens/beach.jpg" alt="">
-      </div>
-      <div class="img">
-        <img src="/imagens/beach.jpg" alt="">
-      </div>
-      <div class="img">
-        <img src="/imagens/beach.jpg" alt="">
-      </div>
-      
+<div class="swiper my-slider">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide slide">
+            <img src="./imagens/beach.jpg" alt="Praia">
+        </div>
+        <div class="swiper-slide slide">
+            <img src="./imagens/beach.jpg" alt="Praia">
+        </div>
+        <div class="swiper-slide slide">
+            <img src="./imagens/beach.jpg" alt="Praia">
+        </div>
+        <div class="swiper-slide slide">
+            <img src="./imagens/beach.jpg" alt="Praia">
+        </div>
     </div>
-  </section>
-  
+    <!-- Paginação (dots) -->
+    <div class="swiper-pagination"></div>
+    <!-- Botões de navegação (opcional) -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+</div>
 
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<!-- Seu JS (inicialização do Swiper) -->
+<script src="js/main.js"></script>
 
-    <script src="js/main.js"></script>
 </body>
 </html>
